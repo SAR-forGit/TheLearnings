@@ -54,3 +54,23 @@ console.log ("Locale string nigg:", nigg.toLocaleString())
 var nigg = "Good Morning nigga"
 console.log (nigg.split(' ')) //it will spli this string from wherever it find space and make it an array
 console.log (nigg.split('i')) //it will spli this string from wherever it find 'i' and make it an array
+// ______________________________________________________________________________________________________________________________________________________________//
+
+// Obj (dict from python)
+var nigg = {
+    nigga1 : "aura -1000",
+    nigga2 : 5050,
+    nigga3 : "GAY"
+}
+
+console.log (nigg)
+console.log (nigg.nigga1)
+console.log (nigg.nigga2)
+console.log (nigg.nigga3)
+console.log (Object.keys(nigg))
+console.log (Object.values(nigg))
+
+nigg.nigger = "kullu manali"
+
+console.log (nigg)
+// ______________________________________________________________________________________________________________________________________________________________//
