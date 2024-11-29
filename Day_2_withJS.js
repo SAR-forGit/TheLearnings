@@ -36,6 +36,34 @@ else {
 
 // Conditional Operator || Ternary operator
 
-age = 19
+var age = 19
 
 age > 18 ? console.log ("You're eligible to vote!") : console.log ('You are not eligible to vote!')
+
+age > 18 
+    ? console.log ('You are eligible to vote!') 
+    : console.log ('You are not eligible to vote!')
+
+// Fucntion 
+
+function hello_printer(){
+    console.log ('Hello')
+}
+
+hello_printer = function(){                                                           // Another way of declaring function
+    console.log ("Hello printer is saying hello")
+}
+
+hello_printer()
+
+//Another example of function:
+
+var obj1 = {
+    name : "TVS",
+    bikeName : function(){                                                           // Another way of declaring function
+        console.log ('Hello, this is bike name')
+    }
+}
+
+console.log (obj1.name)
+obj1.bikeName()
