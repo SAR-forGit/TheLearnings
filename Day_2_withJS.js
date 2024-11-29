@@ -44,13 +44,17 @@ age > 18
     ? console.log ('You are eligible to vote!') 
     : console.log ('You are not eligible to vote!')
 
-// Fucntion 
+// 1.Function 
 
 function hello_printer(){
     console.log ('Hello')
 }
 
-hello_printer = function(){                                                           // Another way of declaring function
+hello_printer()
+
+// 2. Anonymous Function || Function expression
+
+hello_printer = function(){                                                           // Another way of declaring function or anonymous function
     console.log ("Hello printer is saying hello")
 }
 
@@ -67,3 +71,23 @@ var obj1 = {
 
 console.log (obj1.name)
 obj1.bikeName()
+
+//Function addder
+
+function adder(a, b){
+    return a+b
+}
+
+chint = adder(2, 5)
+
+console.log (chint)
+
+
+// 3. Hello Function
+
+adder = (a, b) => {
+    return a+b
+}
+
+console.log (adder(10, 12))
+
