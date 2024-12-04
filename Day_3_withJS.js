@@ -20,3 +20,18 @@ console.log ("Original Array =", anArray)
 var mappedArray = anArray.map((data) => (data+2))
 console.log ("Mapped array (i.e +2 for each element) =", mappedArray)
 
+// 2. filter
+filteredArray = anArray.filter((data) => (data<=3))
+console.log ("Filtered Array =", filteredArray)
+
+//or 
+
+filteredArray = anArray.filter((data) => {
+    if (data<=3){
+    return data
+    }
+})
+
+// 3. find
+findedArray = anArray.find (data => data>60)
+console.log ("Finded Array =", findedArray)
