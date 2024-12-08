@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./stile.css">
+    
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+</head>
+<body>
+    <button pys-onClick="PrintsHello" id="PrintsHello">Printer</button>
+
+    <br><br><br><br><br><br>
+
+    <p>Output:</p>
+    <p id="YourOutput"> </p>
+
+</body>
+
+<py-script>
+    Op = Element("YourOutput")
+
+    def PrintsHello(*args, **kwargs):
+        Op.write("Hello World")
+        
+</py-script>
+
+</html>

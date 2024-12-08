@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+
+    <link rel="stylesheet" href="./stile.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    
+    <py-env> 
+        - matplotlib 
+        - networkx 
+        - numpy
+    </py-env>
+
+
+</head>
+<body>
+
+    <py-repl>
+        import matplotlib.pyplot as plt
+        import numpy as np
+        
+        x = np.random.randn(1000)
+        y = np.random.randn(1000)
+        
+        fig, ax = plt.subplots()
+        ax.scatter(x, y)
+        fig
+    </py-repl>
+    
+    <py-script>
+        import matplotlib.pyplot as plt
+        import numpy as np
+        
+        x = np.random.randn(1000)
+        y = np.random.randn(1000)
+        
+        fig, ax = plt.subplots()
+        ax.scatter(x, y)
+        fig
+    </py-script>
+
+
+    <h1>Trying it for first time</h1>
+
+    <br>
+
+    <textarea name="Imput_text" id="Imput" placeholder="Type here"></textarea>
+
+    <br><br>
+
+    <button id="clear" class="Clearer" type="button" pys-onClick="ClearTheHeck">It clears</button>
+
+    <button id="run" class="Submitter" type="button" pys-onClick="CountTheHeck">It Count</button>
+
+    <p>Output:</p>
+    <p id="Outputter"> </p>
+
+</body>
+
+<py-script>
+
+    Inputter_texter = Element("Imput")
+    Omput = Element("Outputter")
+
+    def ClearTheHeck(*args, **kwargs):
+        Omput.write ("Hello World")
+
+
+    def CountTheHeck(*args, **kwargs):
+        Omput.write (len(Inputter_texter.value))
+
+
+    def ClearTheHeck(*args, **kwargs):
+        Inputter_texter.clear()
+
+
+
+</py-script>
+
+<!-- <py-repl>
+import matplotlib.pyplot as plt
+import networkx as nx
+
+G = nx.Graph()
+nodes_california = ["Los Ángeles", "San Diego", "San Francisco"]
+nodes_florida = ["Miami", "Orlando", "Tampa"]
+
+G.add_nodes_from(nodes_california)
+G.add_nodes_from(nodes_florida)
+
+G.add_edge("California", "Los Ángeles")
+G.add_edge("California", "San Diego")
+G.add_edge("California", "San Francisco")
+G.add_edge("Florida", "Miami")
+G.add_edge("Florida", "Orlando")
+G.add_edge("Florida", "Tampa")
+
+nx.draw(G, with_labels=True)
+plt.show()
+</py-repl> -->
+
+</html>
