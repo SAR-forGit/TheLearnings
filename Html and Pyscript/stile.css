@@ -15,9 +15,16 @@
 
 }
 
+.TextArea_holder{
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Imput_text{
     border: none;
-
+    width: 100%;
 }
 
 #PrintsHello{
@@ -30,4 +37,25 @@
 #YourOutput{
     display: flex;
     justify-content: center;
+}
+
+#Title_of_thisShit{
+    font-size: 2rem;
+    font-weight: 400;
+    color: pink;
+
+}
+
+.ThePlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
 }
