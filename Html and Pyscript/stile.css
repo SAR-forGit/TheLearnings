@@ -20,11 +20,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-.Imput_text{
+#Imput{
     border: none;
     width: 100%;
+    resize: none;
 }
 
 #PrintsHello{
