@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing</title>
 
-    <link rel="stylesheet" href="./stile.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+    <script defer  src="https://pyscript.net/alpha/pyscript.js"></script>
+  
+    <!-- <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>  -->
 
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    
+    <py-env>
+        - mouse
+        - numpy
+    </py-env>
     
     <py-env> 
         - matplotlib 
@@ -91,6 +102,49 @@
 
 
 
+        </head>
+        <body>
+        
+            <py-script src="./WaytoJackpot.py"></py-script>
+           
+            <!-- <a>
+                <py-script>
+                    import mouse
+        
+                    # left click
+                    mouse.click('left')
+        
+                    # right click
+                    mouse.click('right')
+        
+                    # middle click
+                    mouse.click('middle')
+                </py-script>
+            </a> -->
+        
+            <!-- <py-script>
+                # whether the right button is clicked
+            In[25]: mouse.is_pressed("right")
+        
+            Out[25]: False
+            </py-script> -->
+        
+            <!-- <div id="plotter"></div>
+            <py-script output="plotter">
+                import matplotlib.pyplot as plt
+                import numpy as np
+        
+                x = np.random.randn(100)
+                y = np.random.randn(100)
+        
+                fig, ax = plt.subplots()
+                ax.scatter(x, y)
+                fig
+        
+            </py-script> -->
+        
+        <py-script>print ("Hello World")</py-script>
+        
 </py-script>
 
 <py-repl>
