@@ -225,16 +225,15 @@ let givenNumber = 0;
 while(1){
     if (givenNumber !== "Finish"){
         givenNumber = prompt('Enter number (1-n) (or Enter "Finish" to stop): ');
-        if (isNaN(givenNumber) == true && givenNumber !== "Finish" && givenNumber !== "F" && givenNumber !=="f"){
+        if (isNaN(givenNumber) == true && givenNumber !== "Finish"){
             continue;
         }
-
         else{
         givenArray.push(givenNumber);
         }
     }
-
-    else if (givenNumber == "Finish" && givenNumber == "F" && givenNumber =="f"){
+    
+    else if (givenNumber == "Finish"){
         let temp = givenArray.pop();
         break;
     }
