@@ -115,12 +115,55 @@ anArray3.forEach ((val) => {
 );
 
 //Example 1:
-let anArray2 = [10, 20, 30, 40], total2 = 0;
+let anArray2 = [2, 4, 6, 8];
 anArray2.forEach(
-    function summer(val){
-        total2 = total2 + val;
-        return total2;
+    function powerer(val){
+        console.log (val*val)
     }
 );
 
-console.log(summer);
+//Example 2:
+let anArray4 = [1, 2, 4, 6, 8];
+
+let Halfer = (num) => {
+    console.log(`Half of the number ${num} is ${num / 2}`);
+};
+
+anArray4.forEach(Halfer)
+
+/////////////////////////////////////////////////////////// Map Function //////////////////////////////////////////////////////////////
+//Example 1
+let anArray5 = [5, 6, 8];
+
+anArray5.map ((val) => {
+    console.log(val);
+});
+
+//Example 2:
+let anArray6 = [5, 6, 8];
+
+let newArray = anArray6.map ((val) => {
+    return val;
+});
+
+console.log(newArray);
+
+// Example 3:
+let anArray7 = [47, 4, 5, 5, 2, 1];
+
+let Squarer = anArray7.map ((val) =>{
+    return val*val;
+})
+
+console.log(Squarer);
+
+// Q: For a given array with marks of students -> [85, 97, 44, 37, 76, 60], Find the average marks of the entire class
+let marks1 = [97, 85, 49, 65], total1 = 0;
+
+let Averager = marks1.map ((mark) => {
+    total = total + mark;
+});
+
+let average1 = total / marks1.length;
+
+console.log (`average of class is ${average1}`);
