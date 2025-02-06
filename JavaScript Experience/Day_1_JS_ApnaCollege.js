@@ -1,27 +1,27 @@
-// //////////////////////////////////////////////// String Concatenation Apna College question ///////////////////////////////////////////////////////
-// let givenName = prompt("Enter your name: ");
+//////////////////////////////////////////////// String Concatenation Apna College question ///////////////////////////////////////////////////////
+let givenName = prompt("Enter your name: ");
 
-// recommendedUsername = "@" + givenName + givenName.length;
+recommendedUsername = "@" + givenName + givenName.length;
 
-// while(1){
-//     var userName = prompt(`we recommend you username: ${recommendedUsername}. Do you want to use it?`);
-//     let userAnswer = userName.toLowerCase()
+while(1){
+    var userName = prompt(`we recommend you username: ${recommendedUsername}. Do you want to use it?`);
+    let userAnswer = userName.toLowerCase()
 
-//     if(userAnswer == "yes"){
-//         userName = recommendedUsername;
-//         break;
-//     }
-//     else if(userAnswer == "no"){
-//             userName = prompt("Enter your desired username:");
-//             userName = "@".concat(userName)
-//             break;
-//     }
-//     else{
-//         prompt("Invalid Answer..... please retry");
-//         continue;
-//     }
-// }
-// console.log(`Name = ${givenName}\nUser Name = ${userName}`);
+    if(userAnswer == "yes" || userAnswer == "Y" || userAnswer == "y"){
+        userName = recommendedUsername;
+        break;
+    }
+    else if(userAnswer == "no" || userAnswer == "N" || userAnswer == "n"){
+            userName = prompt("Enter your desired username:");
+            userName = "@".concat(userName)
+            break;
+    }
+    else{
+        prompt("Invalid Answer..... please retry");
+        continue;
+    }
+}
+console.log(`Name = ${givenName}\nUser Name = ${userName}`);
 
 // Q: For a given array with marks of students -> [85, 97, 44, 37, 76, 60], Find the average marks of the entire class
 
@@ -167,3 +167,78 @@ let Averager = marks1.map ((mark) => {
 let average1 = total / marks1.length;
 
 console.log (`average of class is ${average1}`);
+
+/////////////////////////////////////////////////////////// Filter Function //////////////////////////////////////////////////////////////
+let anArray8 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+let evener = anArray8.filter ((val) => {
+    return val % 2 === 0;
+})
+
+console.log(`Even numbers of the given array is ${evener}`);
+
+// Example:
+let anArray9 = [8, 90, 26, 5, 3, 47, 69, 56, 46];
+
+let odder = anArray9.filter ((num) => {
+    return num % 2 !== 0;
+})
+
+console.log(`Odd number for the given array is ${odder}`);
+
+/////////////////////////////////////////////////////////// Reduce Method //////////////////////////////////////////////////////////////
+let anArray10 = [1, 2, 3, 4, 5];
+
+let adder = anArray10.reduce ((result, current) => {
+    return result + current;
+})
+
+console.log (adder);
+
+// Example 2:
+let anArray11 = [69, 77, 58, 10, 12, 4, 2, 12, 16, 20, 36, 46, 58]
+
+let biggest = anArray11.reduce ((result, current) => {
+    return result > current ? result : current;
+})
+
+console.log(biggest);
+
+// Q: We are given an array of marks of students. Filter out of the marks of students that scored 90+.
+
+let studentMarks = [96, 52, 75, 27, 34, 99, 88, 98, 89];
+
+let toppers = studentMarks.filter ((val) => {
+    return val > 90;
+})
+
+console.log (toppers)
+
+// Q: Take a number n as input from user. Create an array of numbers from 1 to n.
+//  Use the reduce method to calculate sum of all numbers in the array
+//  Use the reduce method to calculate product of all numbers in the array
+
+let givenArray = [];
+
+let givenNumber = 0;
+
+while(1){
+    if (givenNumber !== "Finish"){
+        givenNumber = prompt('Enter number (1-n) (or Enter "Finish" to stop): ');
+        if (isNaN(givenNumber) == true && givenNumber !== "Finish" && givenNumber !== "F" && givenNumber !=="f"){
+            continue;
+        }
+
+        else{
+        givenArray.push(givenNumber);
+        }
+    }
+
+    else if (givenNumber == "Finish" && givenNumber == "F" && givenNumber =="f"){
+        let temp = givenArray.pop();
+        break;
+    }
+}
+
+// let AnArray = givenArray.filter (item => Number.isFinite(item));
+console.log(givenArray)
