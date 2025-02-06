@@ -1,3 +1,28 @@
+// //////////////////////////////////////////////// String Concatenation Apna College question ///////////////////////////////////////////////////////
+// let givenName = prompt("Enter your name: ");
+
+// recommendedUsername = "@" + givenName + givenName.length;
+
+// while(1){
+//     var userName = prompt(`we recommend you username: ${recommendedUsername}. Do you want to use it?`);
+//     let userAnswer = userName.toLowerCase()
+
+//     if(userAnswer == "yes"){
+//         userName = recommendedUsername;
+//         break;
+//     }
+//     else if(userAnswer == "no"){
+//             userName = prompt("Enter your desired username:");
+//             userName = "@".concat(userName)
+//             break;
+//     }
+//     else{
+//         prompt("Invalid Answer..... please retry");
+//         continue;
+//     }
+// }
+// console.log(`Name = ${givenName}\nUser Name = ${userName}`);
+
 // Q: For a given array with marks of students -> [85, 97, 44, 37, 76, 60], Find the average marks of the entire class
 
 let marks = [85, 97, 44, 37, 76, 60];
@@ -5,7 +30,7 @@ let total = 0;
 
 for (let mark of marks){
     total = total + mark;
-}
+}    
 
 let average = total / marks.length;
 
@@ -22,40 +47,15 @@ for (let val of items){
     items[i] = items[i] - offer;
     console.log(items[i]);
     i++;
-}
+}    
 
 //way 2
 for(let i = 0; i<items.length; i++){
     let offer = items[i] / 10;
     items[i] -= offer;
-}
+}    
 
 console.log(items);
-
-//////////////////////////////////////////////// String Concatenation Apna College question ///////////////////////////////////////////////////////
-let givenName = prompt("Enter your name: ");
-
-recommendedUsername = "@" + givenName + givenName.length;
-
-while(1){
-    var userName = prompt(`we recommend you username: ${recommendedUsername}. Do you want to use it?`);
-    let userAnswer = userName.toLowerCase()
-
-    if(userAnswer == "yes"){
-        userName = recommendedUsername;
-        break;
-    }
-    else if(userAnswer == "no"){
-            userName = prompt("Enter your desired username:");
-            userName = "@".concat(userName)
-            break;
-    }
-    else{
-        prompt("Invalid Answer..... please retry");
-        continue;
-    }
-}
-console.log(`Name = ${givenName}\nUser Name = ${userName}`);
 
 ///////////////////////////////////////////////////// Arrow Function //////////////////////////////////////////////////////
 //Full-size real function:
@@ -96,3 +96,31 @@ function vowelCounter(given){
 
 givenWord = prompt("Enter a word: ");
 vowelCounter(givenWord);
+
+///////////////////////////////////////////////////////// For Each Function ////////////////////////////////////////////////////////////
+
+let anArray = [69, 77, 45, 100, 102, 1001];
+
+anArray.forEach (
+    function printVal(val){
+        console.log(val);
+    }
+);
+
+let anArray3 = ["BrainRot", "Skibidi", "Sigma"];
+
+anArray3.forEach ((val) => {
+        console.log(val.toUpperCase());
+    }
+);
+
+//Example 1:
+let anArray2 = [10, 20, 30, 40], total2 = 0;
+anArray2.forEach(
+    function summer(val){
+        total2 = total2 + val;
+        return total2;
+    }
+);
+
+console.log(summer);
