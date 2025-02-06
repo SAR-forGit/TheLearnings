@@ -57,4 +57,24 @@ while(1){
 }
 console.log(`Name = ${givenName}\nUser Name = ${userName}`);
 
+///////////////////////////////////////////////////// Arrow Function //////////////////////////////////////////////////////
+//Full-size real function:
+function the_multiplier(a, b){
+    console.log(a*b);
+}
 
+//Arrow Function:
+let the_summer = (a, b) => {
+    console.log(a+b);
+}
+
+the_summer(5, 8);
+the_multiplier(5, 8);
+
+//Another example of arrow Function
+let hello_printer = () => console.log("Hello");
+
+hello_printer();
+hello_printer();
+hello_printer();
+hello_printer();
