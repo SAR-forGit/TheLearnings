@@ -78,3 +78,21 @@ hello_printer();
 hello_printer();
 hello_printer();
 hello_printer();
+
+//Q: Create a function using the "function" keyword that takes string as an argument & returns the number of vowels in the string
+
+function vowelCounter(given){
+    let vowels = 0;
+
+    str = given.toLowerCase();
+
+    for (let i of str){
+        if(i === "a" || i === "e" || i === "i" || i === "o" || i === "u"){
+            vowels++;
+        }
+    } 
+    console.log(`The number of vowels in the word ${given} are ${vowels}`);
+}
+
+givenWord = prompt("Enter a word: ");
+vowelCounter(givenWord);
