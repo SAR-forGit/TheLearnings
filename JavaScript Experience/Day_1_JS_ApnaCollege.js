@@ -17,7 +17,7 @@ while(1){
             break;
     }
     else{
-        prompt("Invalid Answer..... please retry");
+        alert("Invalid Answer..... please retry");
         continue;
     }
 }
@@ -239,5 +239,16 @@ while(1){
     }
 }
 
-// let AnArray = givenArray.filter (item => Number.isFinite(item));
-console.log(givenArray)
+
+
+let SumOfArray = givenArray.reduce ((result, current) => {
+    return Number(result) + Number(current);
+})
+
+let ProductOfArray = givenArray.reduce ((result, current) => {
+    return current * result;
+})
+
+console.log(`Your given array is ${givenArray}`)
+console.log (`Sum of your given array is ${SumOfArray}`);
+console.log (`Product of your given array is ${ProductOfArray}`);
