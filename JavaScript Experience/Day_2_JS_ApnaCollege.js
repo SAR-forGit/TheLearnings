@@ -55,6 +55,8 @@ let Brainrot_box = document.getElementById("brainrot_box");
 Brainrot_box.style.backgroundColor = "green";
 Brainrot_box.style.border = "black 4px solid";
 Brainrot_box.style.color = "white";
+Brainrot_box.style.margin = "1rem 0 0 0";
+Brainrot_box.style.padding = "1rem";
 
 // Example 1:
 let kk_image = document.getElementById("KK_Image");
