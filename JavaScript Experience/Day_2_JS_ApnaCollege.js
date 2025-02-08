@@ -47,3 +47,22 @@ for (box of boxes){
     console.log (`${box.innerText} is of ${genz[idx]}`);
     idx++;
 }
+
+/////////////////////////////////////////////////////////// Styles: ///////////////////////////////////////////////////////////////////////
+
+let Brainrot_box = document.getElementById("brainrot_box");
+
+Brainrot_box.style.backgroundColor = "green";
+Brainrot_box.style.border = "black 4px solid";
+Brainrot_box.style.color = "white";
+
+// Example 1:
+let kk_image = document.getElementById("KK_Image");
+kk_image.style.visibility = "hidden"
+
+givenAnswer = prompt("Who is KK?").toLowerCase();
+
+if(givenAnswer == "singer"){
+    kk_image.style.visibility = "visible"
+}
+else kk_image.style.visibility = "hidden"
