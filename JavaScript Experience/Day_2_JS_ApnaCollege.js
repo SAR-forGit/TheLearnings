@@ -67,4 +67,11 @@ givenAnswer = prompt("Who is KK?").toLowerCase();
 if(givenAnswer == "singer"){
     kk_image.style.visibility = "visible"
 }
-else kk_image.style.visibility = "hidden"
+else kk_image.remove
+
+////////////////////////////////////////////////////// Insert Elements: ///////////////////////////////////////////////////////////////////
+let TheButton = document.createElement('button');
+TheButton.innerText = "Click Me";
+
+let bodee = document.querySelector("body")
+bodee.prepend(TheButton);
