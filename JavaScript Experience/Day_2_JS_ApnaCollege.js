@@ -67,7 +67,7 @@ givenAnswer = prompt("Who is KK?").toLowerCase();
 if(givenAnswer == "singer"){
     kk_image.style.visibility = "visible"
 }
-else kk_image.remove
+else kk_image.remove()
 
 ////////////////////////////////////////////////////// Insert Elements: ///////////////////////////////////////////////////////////////////
 let TheButton = document.createElement('button');
@@ -75,3 +75,13 @@ TheButton.innerText = "Click Me";
 
 let bodee = document.querySelector("body")
 bodee.prepend(TheButton);
+////////////////////////////////////////////////////// Practice Questions: //////////////////////////////////////////////////////////////////
+let the_Button = document.createElement("button");
+
+the_Button.innerText = 'Click me';
+
+the_Button.style.backgroundColor = "red";
+the_Button.style.color = "white";
+
+let brainrot_heading = document.querySelector(".brainrot_heading");
+bodee.prepend(the_Button);
