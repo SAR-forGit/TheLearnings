@@ -102,4 +102,30 @@ class Doc extends HomoSepion{
 
 }
 
-let Shuja = new Doc("Plastic Surgeon")
+let Shuja = new Doc("Plastic Surgeon");
+
+// super(argument);
+
+class person{
+    constructor(name) {
+        this.specie = "Homo Sepians";
+        this.name = name;
+    }
+
+    eat() {
+        console.log("eat");
+    }
+}
+
+class engineer extends person{
+    constructor(name){
+        super(name);
+    }
+
+    work() {
+        super.eat();
+        console.log("Maintain 75% attendance");
+    }
+}
+
+let enggObj = new engineer("Rancho");
