@@ -129,3 +129,77 @@ class engineer extends person{
 }
 
 let enggObj = new engineer("Rancho");
+
+
+/////////////////////////////////////////////////////////////////////////// Practice Question: //////////////////////////////////////////////////////////////////////////////////
+
+// Q: You're creating a website for your college. Create a class user with 2 properties, name & email. It also has a method called viewData() that allow user to view data.
+
+class Student{
+    constructor(name, email){
+        this.name = name;
+        this.email = email;
+    }
+    
+    viewData(){
+        console.log("View data");
+    }
+}
+
+let student1 = new Student("Md Rafi", "MainePuchaChandSe@gmail.com");
+console.log(`${student1.name} has won the singing competition`);
+
+let student2 = new Student("KK", "SajdeKiyeHainLakhoDuaeMangi@gmail.com");
+console.log ("details of student 2:", student2);
+
+// Q: Create a new class called Admin which inherits from user. Add new method called editData to Admin that allows to edit website data
+
+let Data = "Some Secret Data"
+
+class user{
+    constructor(name, branch){
+        this.name = name;
+        this.branch = branch;
+    }
+}
+
+class Admin extends user{
+    constructor(name, branch){
+        super(name, branch);
+    }
+    
+    editData(){
+        Data = "the new data";
+    }
+}
+
+let admin1 = new Admin("Poor", "IT");
+
+////////////////////////////////////////////////////////////////////////// Error handling: ///////////////////////////////////////////////////////////////////////////////////////
+
+// try-catch
+
+let a = 5, b = 10;
+
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
+
+try{
+    console.log(a+c); // if this got error it will not execute 
+}
+
+catch(err){
+    console.log(err); // it will pass through the catch method and here we're console.log it
+}
+
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
+console.log(a+b);
