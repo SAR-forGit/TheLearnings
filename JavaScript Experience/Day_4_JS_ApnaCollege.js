@@ -125,3 +125,16 @@ getData(1).then((result) => {
 })
 
 ////////////////////////////////////////////////////////////////// Async - Await ///////////////////////////////////////////////////////////////////////////////////
+function API(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("This is Weather API");
+            resolve(200);
+        }, 2000)
+    })
+}
+
+async function getWeather() {
+    await API();
+    await API();
+}
