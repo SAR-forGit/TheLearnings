@@ -68,3 +68,60 @@ getData(1, () => {
     })
 })
 
+///////////////////////////////////////////////////////////////////////// Promises //////////////////////////////////////////////////////////////////////////////////////////////
+
+let pinkyPromise = new Promise((resolve, reject) => {
+    console.log("Hi there promise")
+    resolve("It's resolved successfully");
+    reject("Its' rejected and an error occured")
+})
+
+// Example 1
+
+let lowercaseAlphabet = prompt ("Enter an alphabet in lowercase");
+
+let CheckerOfCases = () => {
+    return new Promise((resolve, reject) => {
+        if (lowercaseAlphabet == lowercaseAlphabet.toLocaleLowerCase()){
+            resolve();
+        }
+        else{
+            reject("Bruh you wrote in capital");
+        }
+    })
+}
+
+let promise = CheckerOfCases()
+promise.then(() => {
+    console.log("Nigga");
+})
+
+promise.catch ((err) => {
+    console.log("You are wrong dhoondu,", err); // here err is a parameter which was send in the real promise reject time
+})
+
+// Promise chain 
+
+function getData(DataID) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", DataID);
+            resolve("success");
+        }, 2000)
+    })
+}
+
+console.log("Getting data 1.......");
+getData(1).then((result) => {
+    console.log("Getting data 2.......");
+    return getData(2)
+})
+.then((result) => {
+    console.log("Getting data 3.......");
+    return getData(3);
+})
+.then((result) => {
+    console.log("Everything is executed successfully");
+})
+
+////////////////////////////////////////////////////////////////// Async - Await ///////////////////////////////////////////////////////////////////////////////////
