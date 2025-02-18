@@ -138,3 +138,30 @@ async function getWeather() {
     await API();
     await API();
 }
+
+// Example 1:
+function getchData(DataID) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", DataID);
+            resolve("success");
+        }, 2000)
+    })
+}
+
+async function TheDataTeller(){
+    console.log("Getting Data 1 using Async-Await...........");
+    await getchData(1);
+    console.log("Getting Data 2 using Async-Await...........");
+    await getchData(2);
+    console.log("Getting Data 3 using Async-Await...........");
+    await getchData(3);
+    console.log("Getting Data 4 using Async-Await...........");
+    await getchData(4);
+    console.log("Getting Data 5 using Async-Await...........");
+    await getchData(5);
+    console.log("Getting Data 6 using Async-Await...........");
+    await getchData(6);
+}
+
+TheDataTeller();
