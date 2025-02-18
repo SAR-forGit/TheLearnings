@@ -177,3 +177,12 @@ TheDataTeller();
 (() => {
     console.log ("This was also called using IIFE but different method");
 })();
+
+///////////////////////////////////////////////////////////// API //////////////////////////////////////////////////////////////////////////
+
+// const URL = "https://cdn.animenewsnetwork.com/encyclopedia/api.xml?anime=4658";
+
+// const getAnime = async () => {
+//     let response = await fetch(URL);
+//     console.log(response)
+// } //not working
