@@ -139,8 +139,8 @@ async function getWeather() {
     await API();
 }
 
-// Example 1:
-function getchData(DataID) {
+// Example:
+let getchData = (DataID) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log("data", DataID);
@@ -167,3 +167,13 @@ async function TheDataTeller(){
 TheDataTeller();
 
 ////////////////////////////////////////////////////////////////// IIFE ///////////////////////////////////////////////////////////////////////////////////
+
+// method 1:
+(function() {
+    console.log("This is called using IIFE")
+})();
+
+// method 2:
+(() => {
+    console.log ("This was also called using IIFE but different method");
+})();
