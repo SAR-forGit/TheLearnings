@@ -39,3 +39,15 @@ console.log(nigg);
 nigg = "Hello Nigg, How are you Nigg?";
 nigg = nigg.replaceAll("Nigg", "Slave");
 console.log(nigg);
+
+// Type of function
+// Full Function
+function the_multiplier (a, b){
+    return a*b;
+}
+
+console.log(the_multiplier(2, 5));
+
+// Arrow Function (Lambda function of JS)
+the_adder = (a, b) => a+b;
+console.log(the_adder(3, 5));
