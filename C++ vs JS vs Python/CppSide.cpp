@@ -184,3 +184,24 @@ int main() {
 
     cout << nigg;
 }
+
+// types of function:
+#include<iostream>
+using namespace std;
+
+//Original Function:
+int num_multiplier(int a, int b){
+    return a*b;
+}
+
+int main(){
+    cout << num_multiplier(3, 5) << endl;
+    
+    // Lambda Function
+    auto num_adder = [](int a, int b){
+        return a+b;
+    };
+    
+    cout << num_adder(4, 15) << endl;
+    return 0;
+}
