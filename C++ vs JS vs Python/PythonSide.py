@@ -33,3 +33,15 @@ print(nigg)
 nigg = "Hello Nigg, How are you Nigg?"
 nigg = nigg.replace("NIGG", "Slave")
 print(nigg)
+
+
+#Types of Function:
+# Full Function
+def the_multiplier (a, b):
+    return a*b
+
+print(the_multiplier(2, 5))
+
+# Arrow Function (Lambda function of JS)
+the_adder = lambda a, b: a+b
+print(the_adder(3, 5))
