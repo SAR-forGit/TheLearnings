@@ -26,5 +26,10 @@ print(f"Hey ${givenName}, your username is set to {userName}")
 
 #Replace
 nigg = "Hi, NIGG how are you?"
+nigg = nigg.replace("NIGG", "Slave", 1)
+print(nigg)
+
+#Replace All
+nigg = "Hello Nigg, How are you Nigg?"
 nigg = nigg.replace("NIGG", "Slave")
 print(nigg)
