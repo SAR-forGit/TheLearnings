@@ -152,3 +152,35 @@ int main() {
 
     cout << nigg;
 }
+
+// Replace All Word from random sentence you input:
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    cout << "Write your line to repalce the word from:" << endl;
+    
+    string nigg;
+    getline(cin, nigg);
+    cout << "Your line" << endl;
+    cout << nigg << endl;
+    
+    cout << "what you wanna remove?" << endl;
+    string to_remove;
+    cin >> to_remove;
+    
+    string replace_word;
+    cout<<"What do you wanna replace with?" << endl;
+    cin >> replace_word;
+    
+    size_t pos = 0;
+    int last_pos = to_remove.length();
+
+    while ((pos = nigg.find(to_remove, pos)) != string::npos) {
+        nigg.replace(pos, last_pos, replace_word);
+        pos += last_pos; // Length of "Slave"
+    }
+
+    cout << nigg;
+}
