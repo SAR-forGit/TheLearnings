@@ -30,7 +30,12 @@ while(1){
 }
 console.log(`Hey ${givenName}, your username is set to ${userName}`);
 
-//Replace
+//Replace one word
 nigg = "Hi, NIGG how are you";
-nigg = nigg.replace("NIGG", "Aura Inifnty");
+nigg = nigg.replace("NIGG", "Slave");
+console.log(nigg);
+
+// Replace All Word
+nigg = "Hello Nigg, How are you Nigg?";
+nigg = nigg.replaceAll("Nigg", "Slave");
 console.log(nigg);
