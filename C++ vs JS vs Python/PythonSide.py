@@ -23,3 +23,8 @@ while(1):
         userName = input("Wrong Answer! Try Again.")
         continue
 print(f"Hey ${givenName}, your username is set to {userName}")
+
+#Replace
+nigg = "Hi, NIGG how are you?"
+nigg = nigg.replace("NIGG", "Slave")
+print(nigg)
