@@ -29,3 +29,8 @@ while(1){
     }
 }
 console.log(`Hey ${givenName}, your username is set to ${userName}`);
+
+//Replace
+nigg = "Hi, NIGG how are you";
+nigg = nigg.replace("NIGG", "Aura Inifnty");
+console.log(nigg);
