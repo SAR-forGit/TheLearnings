@@ -116,3 +116,39 @@ int main() {
 
     return 0;
 }
+
+// Replace One Word:
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   
+   string nigg = "Hello Nigg, How are you?" ;
+   
+   size_t pos = nigg.find("Nigg");
+   
+   if (pos != string::npos) nigg.replace(pos, 4, "Slave");
+   
+   cout << nigg;
+   
+   return 0;
+}
+
+// Replace All Word (2 Nigg in one sentence):
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string nigg = "Hello Nigg, How are you Nigg?";
+
+    size_t pos = 0;
+
+    while ((pos = nigg.find("Nigg", pos)) != string::npos) {
+        nigg.replace(pos, 4, "Slave");
+        pos += 4; // Length of "Slave"
+    }
+
+    cout << nigg;
+}
