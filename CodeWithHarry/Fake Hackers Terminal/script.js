@@ -1,12 +1,20 @@
-text = document.querySelector(".terminal").children;
+text = document.querySelector("#terminal").children;
 
-randomDelay = () => {
+randomDelay = (dataID) => {
     return new Promise((resolve, reject) => {
-        timeOut = 1 + 6*Math.random();
+        timeOut = Math.floor(1 + 6*Math.random());
         setTimeout(() => {
-            resolve()
+            // resolve(text(dataID));
+            text.innerHTML = text.innerHTML + text[dataID];
+            resolve(console.log(`delay of ${timeOut}`))
         },timeOut *1000)
     })
 }
 
-text = {}
+(async function(){
+    await randomDelay(0);
+    await randomDelay(1);
+    await randomDelay(2);
+    await randomDelay(3);
+    await randomDelay(4);
+})();
