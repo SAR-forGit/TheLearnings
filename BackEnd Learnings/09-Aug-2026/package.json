@@ -1,0 +1,23 @@
+{
+  "name": "veryfirstserver",
+  "version": "1.0.0",
+  "description": "Trying the npm for the first time",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "https://github.com/SAR-forGit/TheLearnings#readme",
+  "bugs": {
+    "url": "https://github.com/SAR-forGit/TheLearnings/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAR-forGit/TheLearnings.git"
+  },
+  "license": "ISC",
+  "author": "SAR",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
