@@ -1,0 +1,9 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/stu-bell/devcontainer-features/node:0": {},
+		"ghcr.io/devcontainers-extra/features/node-asdf:0": {},
+		"ghcr.io/roul/devcontainer-features/mise-node:1": {},
+		"ghcr.io/postfinance/devcontainer-features/node:1": {}
+	}
+}
