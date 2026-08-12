@@ -1,14 +1,15 @@
-const { createServer } = require('node:http');
+// // type module example
 
-const hostname = '127.0.0.1';
-const port = 3000;
+// import obj from "./ModuleExampleES6.js"
 
-const server = createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  res.end('<h1> Hello there </h1>');
-});
+// console.log(a)
+// console.log(b)
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+import Thatobj from "./ModuleExampleES6.js"
+console.log(Thatobj)
+
+// // type common.js example
+
+// const a = require("./Common js Example ")
+
+// console.log(a, __dirname, __filename)
