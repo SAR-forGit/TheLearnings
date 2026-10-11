@@ -1,0 +1,16 @@
+.CardsPlace{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+
+.aCard {
+  border: black Solid 3px;
+  margin: 2px;
+  background-color: DarkViolet;
+  max-width: 23vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
